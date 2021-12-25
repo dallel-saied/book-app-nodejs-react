@@ -7,7 +7,7 @@ const path = require('path');
 // router.use(function(req, res) {
 // 	res.sendFile(path.join(__dirname, '../client/build/index.html'));
 // });
-app.get('*', function (req, res) {
+router.get('*', function (req, res) {
     const index = path.join(__dirname, 'build', 'index.html');
     res.sendFile(index);
   });
