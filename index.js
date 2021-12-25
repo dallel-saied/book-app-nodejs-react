@@ -14,6 +14,10 @@ app.use(express.static('client/build'));
 app.use(bookRouter)
 app.use(routes);
 
+app.get('*', function (req, res) {
+    res.sendFile(path.join(__dirname, '../client/build', "index.html"));
+  });
+
 //3. Define a port
 const port = process.env.PORT || 4000
 
