@@ -15,9 +15,9 @@ app.use(bookRouter)
 app.use(routes);
 
 //3. Define a port
-const port = process.env.APP_PORT || 4000
+const port = process.env.PORT || 4000
 
 //4. Listen to the port
 app.listen(port, () => {
-    console.log(`Server is up on port: ${port}`)
+    console.log(`Server is up on port: 4000`)
 })
